@@ -8,9 +8,9 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-		features = "./FeatureClasses/FullOperation.feature", glue = { "stepDefinition" })
+		features = "./FeatureClasses/FullOperation.feature",tags = "@SmokeTest", glue = { "stepDefinition" })
 
-public class TestRun extends AbstractTestNGCucumberTests {
+	public class TestRun extends AbstractTestNGCucumberTests {
 	public static Properties config;
 
 	public TestRun() throws IOException {
